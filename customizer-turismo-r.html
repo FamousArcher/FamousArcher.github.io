@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar Turismo R - Legendary Motorsport</title>
+    <style>
+        body {font-family: 'Arial Black', Gadget, sans-serif; background-color: #111; color: white; margin: 0; padding: 20px;}
+        .header {background-color: #ffcc00; color: #000; padding: 20px; text-align: center; margin-bottom: 30px;}
+        .custom-container {max-width: 1200px; margin: 0 auto; display: flex; gap: 30px; flex-wrap: wrap;}
+        .car-preview {flex: 1; min-width: 400px;}
+        .car-preview img {width: 100%; border: 4px solid #ffcc00; border-radius: 8px;}
+        .custom-panel {flex: 1; min-width: 350px; background: #222; padding: 25px; border-radius: 8px; border: 2px solid #444;}
+        h2 {color: #ffcc00;}
+        .interior img {width: 100%; border-radius: 8px; margin: 15px 0;}
+        .color-picker {display: flex; gap: 15px; flex-wrap: wrap;}
+        .color-option {width: 50px; height: 50px; border-radius: 50%; cursor: pointer; border: 4px solid #fff;}
+        .color-option:hover, .color-option.selected {border-color: #ffcc00; transform: scale(1.1);}
+        .btn-confirm {background: #e60000; color: white; padding: 15px 30px; font-size: 1.2rem; border: none; border-radius: 4px; cursor: pointer; margin-top: 20px; width: 100%;}
+        .btn-confirm:hover {background: #ff3333;}
+
+        /* Contenedor del encabezado y el botón de atrás */
+        .header-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* Botón de Atrás estilo Navegador GTA V */
+        .btn-back {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: #1b1b1b;
+            color: #ffffff;
+            border: 2px solid #555;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn-back:hover {
+            background-color: #ffcc00;
+            color: #000;
+            border-color: #ffcc00;
+            box-shadow: 0 0 12px rgba(255, 204, 0, 0.5);
+            cursor: pointer;
+        }
+
+        /* Ajuste del header para que comparta espacio con el botón */
+        .header {
+            flex-grow: 1;
+            margin: 0;
+        }
+
+        /* Ajuste responsivo para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .header-container { flex-direction: column; align-items: stretch; }
+            .btn-back { text-align: center; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <a href="index.html" class="btn-back">&#11013; ATRÁS</a>
+        <div class="header"><h1>PERSONALIZA TU TURISMO R</h1></div>
+    </div>
+    <div class="custom-container">
+        <div class="car-preview">
+            <img src="images/turismo-r-exterior.webp" alt="Turismo R">
+            <h2>Turismo R • $500,000</h2>
+        </div>
+        <div class="custom-panel">
+            <h2>INTERIOR</h2>
+            <div class="interior"><img src="https://img.gta5-mods.com/q95/images/updated-grotti-turismo-r-add-on/c7ad09-Screenshot1568.png" alt="Interior Turismo R"></div>
+            <h2>ELIGE TU COLOR</h2>
+            <div class="color-picker">
+                <div class="color-option" style="background:#e60000;" onclick="selectColor(this)"></div>
+                <div class="color-option" style="background:#0066ff;" onclick="selectColor(this)"></div>
+                <div class="color-option" style="background:#ffcc00;" onclick="selectColor(this)"></div>
+                <div class="color-option" style="background:#00cc00;" onclick="selectColor(this)"></div>
+                <div class="color-option" style="background:#111;" onclick="selectColor(this)"></div>
+                <div class="color-option" style="background:#ffffff;" onclick="selectColor(this)"></div>
+            </div>
+            <h2>DETALLES</h2>
+            <ul style="line-height:1.8;">
+                <li>Velocidad máxima: 205 km/h</li>
+                <li>0-100 km/h: 3.8 segundos</li>
+                <li>Tracción: RWD</li>
+                <li>Asientos: Deportivos</li>
+            </ul>
+            <button class="btn-confirm" onclick="confirmPurchase()">CONFIRMAR COMPRA</button>
+        </div>
+    </div>
+
+    <script>
+        function selectColor(el) {
+            document.querySelectorAll('.color-option').forEach(c => c.classList.remove('selected'));
+            el.classList.add('selected');
+        }
+        function confirmPurchase() {
+            alert("¡Compra confirmada! Tu Turismo R personalizado ha sido agregado al garaje.");
+        }
+    </script>
+</body>
+</html>

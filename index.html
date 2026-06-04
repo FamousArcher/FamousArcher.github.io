@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legendary Motorsport | Los Santos</title>
+    <style>
+        body {
+            font-family: 'Arial Black', Gadget, sans-serif;
+            background-color: #111;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffcc00; 
+            color: #000;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 5px solid #fff;
+            text-transform: uppercase;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .section-banner {
+            background-color: #333;
+            border-left: 10px solid #ffcc00;
+            padding: 10px 20px;
+            margin: 40px 0 20px 0;
+            text-transform: uppercase;
+        }
+
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .car-card {
+            background-color: #222;
+            border: 2px solid #444;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .car-card:hover {
+            border-color: #ffcc00;
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+        }
+
+        .car-image {
+            width: 100%;
+            height: 180px;
+        }
+
+        .car-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .car-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .car-name {
+            font-size: 1.2rem;
+            margin: 0;
+            color: #fff;
+        }
+
+        .car-price {
+            color: #4caf50;
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
+
+        .btn-buy {
+            display: block;
+            background-color: #e60000;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .btn-buy:hover {
+            background-color: #ff3333;
+        }
+
+        @media (max-width: 1100px) { .car-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .car-grid { grid-template-columns: 1fr; } }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+            background-color: #000;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LEGENDARY MOTORSPORT</h1>
+        <p>Los más rápidos, los más caros, los más deseados.</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="section-banner"><h2>Super Deportivos</h2></div>
+        <div class="car-grid">
+            <div class="car-card">
+                <div class="car-image"><img src="https://pbs.twimg.com/media/FCNtTh3WUAQCddE.jpg"></div>
+                <div class="car-info">
+                    <p class="car-name">Osiris</p>
+                    <p class="car-price">$1,950,000</p>
+                    <a href="customizer-osiris.html" target="_blank" class="btn-buy">COMPRAR</a>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><img src="https://img.gta5-mods.com/q75/images/updated-grotti-turismo-r-add-on/c7ad09-Screenshot1563.png"></div>
+                <div class="car-info">
+                    <p class="car-name">Turismo R</p>
+                    <p class="car-price">$500,000</p>
+                    <a href="customizer-turismo-r.html" target="_blank" class="btn-buy">COMPRAR</a>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fd022e9d-8c1a-4f62-9908-0e571711aae2/dd4ax7i-01119381-04bd-4313-885f-7457ceb7800b.jpg/v1/fill/w_1600,h_900,q_75,strp/white_zentorno__ghost___by_remyras_dd4ax7i-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6Ii9mL2ZkMDIyZTlkLThjMWEtNGY2Mi05OTA4LTBlNTcxNzExYWFlMi9kZDRheDdpLTAxMTE5MzgxLTA0YmQtNDMxMy04ODVmLTc0NTdjZWI3ODAwYi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.VpC9UfPnfwj2gtcmSGgJ4Im_i-dshy2IauCo9q_4bLc"></div>
+                <div class="car-info">
+                    <p class="car-name">Zentorno</p>
+                    <p class="car-price">$725,000</p>
+                    <a href="customizer-zentorno.html" target="_blank" class="btn-buy">COMPRAR</a>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><img src="https://gtacars.net/images/ba3b35deddb20bd58e5fe30e0d87b7de"></div>
+                <div class="car-info">
+                    <p class="car-name">T20 Ultra</p>
+                    <p class="car-price">$2,200,000</p>
+                    <a href="customizer-t20-ultra.html" target="_blank" class="btn-buy">COMPRAR</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-banner"><h2>Todo Terreno</h2></div>
+        <div class="car-grid">
+            <div class="car-card">
+                <div class="car-image"><img src="https://gtacars.net/images/19b721a6e15a67482318227660baa635"></div>
+                <div class="car-info">
+                    <p class="car-name">Canis Mesa</p>
+                    <p class="car-price">$87,000</p>
+                    <a href="customizer-canis-mesa.html" target="_blank" class="btn-buy">COMPRAR</a>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><img src="https://gtacars.net/images/ab091d53cf9921794ac997bc30d8bdf4"></div>
+                <div class="car-info">
+                    <p class="car-name">Sandking XL</p>
+                    <p class="car-price">$45,000</p>
+                    <a href="customizer-sandking-xl.html" target="_blank" class="btn-buy">COMPRAR</a>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><img src="https://www.gta.cz/gta5/doprava/800/dubsta-6x6_800.jpg"></div>
+                <div class="car-info">
+                    <p class="car-name">Dubsta 6x6</p>
+                    <p class="car-price">$249,000</p>
+                    <a href="customizer-dubsta-6x6.html" target="_blank" class="btn-buy">COMPRAR</a>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><img src="https://pbs.twimg.com/media/FrVQlXNWAAE980y.png"></div>
+                <div class="car-info">
+                    <p class="car-name">Brawler</p>
+                    <p class="car-price">$715,000</p>
+                    <a href="customizer-brawler.html" target="_blank" class="btn-buy">COMPRAR</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-banner"><h2>Clásicos de Lujo</h2></div>
+        <div class="car-grid">
+            <div class="car-card">
+                <div class="car-image"><img src="https://pbs.twimg.com/media/Ca8JucEWwAElztB.jpg"></div>
+                <div class="car-info">
+                    <p class="car-name">Roosevelt</p>
+                    <p class="car-price">$750,000</p>
+                    <a href="customizer-roosevelt.html" target="_blank" class="btn-buy">COMPRAR</a>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><img src="https://i.pinimg.com/736x/a2/00/02/a20002da0ed8072b55994a0151168930.jpg"></div>
+                <div class="car-info">
+                    <p class="car-name">Tornado</p>
+                    <p class="car-price">$30,000</p>
+                    <a href="customizer-tornado.html" target="_blank" class="btn-buy">COMPRAR</a>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><img src="https://www.zonared.com/images/noticias/portada/43000/43949-h.jpg"></div>
+                <div class="car-info">
+                    <p class="car-name">grotti</p>
+                    <p class="car-price">$38,000</p>
+                    <a href="customizer-grotti.html" target="_blank" class="btn-buy">COMPRAR</a>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2022/07/How-to-Get-The-Benefactor-Stirling-GT-in-GTA-Online-Silver.jpg"></div>
+                <div class="car-info">
+                    <p class="car-name">Stirling GT</p>
+                    <p class="car-price">$975,000</p>
+                    <a href="customizer-stirling-gt.html" target="_blank" class="btn-buy">COMPRAR</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Benny's Original Motor Works - 2026<br>Inventario actualizado cada 24 horas.</p>
+    </footer>
+
+</body>
+</html>
